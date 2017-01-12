@@ -234,7 +234,6 @@ cite {
 
 .projects {
   overflow: auto;
-  margin-bottom: 100px;
 }
 .project {
   width: 300px;
@@ -534,6 +533,10 @@ article header {
 
   .quote {
     padding: 80px 0 8px 0;
+  }
+
+  .projects {
+    margin-bottom: 100px;
   }
   
   .project {
