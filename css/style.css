@@ -189,6 +189,7 @@ pre a, pre a:visited, pre a:active {
   overflow: auto;
   padding: 0 20px;
   padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #fff;
 }
 
@@ -515,6 +516,7 @@ article header {
     height: 430px;
     float: left;
     background-color: #fff;
+    padding-bottom: 0;
   }
 
   .info p {
