@@ -1,7 +1,11 @@
+function toggleMenu(event){
+  
+}
 document.addEventListener('DOMContentLoaded', function(){
   let menu = document.querySelector('.main-nav');
   let goTop = document.getElementById('goTop');
   let a = document.querySelectorAll('.main-nav li a');
+  let hamburger = document.getElementById('hamburger-menu');
 
   setInterval(function(){
     if (document.body.scrollTop > 0) {
@@ -20,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   }, 200);
 
-  let hamburger = document.getElementById('hamburger-menu');
   let hamburgerImageElement = '<img class="hamburger-open" src="img/hamburger.svg" alt="Open Hamburger">';
   let closeHamburgerImageElement = '<img src="img/close.svg" alt="Close Hamburger">';
   hamburger.addEventListener('click', function(event){

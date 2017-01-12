@@ -9,7 +9,7 @@ font-family: 'Noto Sans', sans-serif;*/
 }
 
 html {
-  font-size: 18px;
+  font-size: 18px;;
 }
 
 .container {
@@ -20,7 +20,7 @@ html {
 }
 
 #hamburger-menu {
-  position: fixed;
+  position: absolute;
   top: 10px;
   right: 10px;
   width: 50px;
@@ -76,7 +76,7 @@ section h2 {
   display: inline-block;
   text-align: center;
   font-family: 'Arima Madurai', cursive;
-  font-size: 2.5em;
+  font-size: 1.5rem;
 }
 
 
@@ -95,7 +95,12 @@ section h2 {
 
 .about-box {
   overflow: visible;
-  margin: 60px;
+  margin: 60px 0;
+}
+
+#mobile-fix {
+  width: 375px;
+  margin: 0 auto;
 }
 
 .about-box:after {
@@ -135,7 +140,7 @@ section h2 {
 }
 
 .pic-json {
-  width: 500px;
+  /*width: 500px;*/
   margin: 0 auto;
   overflow: visible;
   position: relative;
@@ -147,9 +152,9 @@ section h2 {
   width: 45%;
   position: absolute;
   display: block;
-  top: -113px;
+  top: -91px;
   left: 50%;
-  margin-left: -113px;
+  margin-left: -91px;
   border-radius: 50%;
   border: 2px solid #343233;
 }
@@ -159,14 +164,15 @@ section h2 {
   clear: left;
   float: left;
   overflow: visible;
+  margin-bottom: 30px;
   /*border: 2px solid #aaa;*/
 }
 pre {
   color: #e8e8e8;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   padding-top: 50px;
   width: 100%;
-  height: 670px;
+  height: 500px;
   /*line-height: 1.5em;*/
   background: #343233;
 }
@@ -178,26 +184,29 @@ pre a, pre a:visited, pre a:active {
 
 .info {
   clear: both;
-  width: 100%;
+  /*width: 100%;*/
+  max-width: 500px;
+  margin: 0 auto;
   overflow: auto;
   padding: 0 20px;
   padding-top: 40px;
+  background-color: #fff;
 }
 
 .info p {
-  color: #f0f0f0;
+  /*color: #f0f0f0;*/
   padding: 10px;
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: 'Noto Sans', sans-serif;
 }
 .social {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-top: 35px;
   padding: 10px;
 }
 
 .social > div {
-  width: 50%;
+  /*color: #f0f0f0;*/
   margin-top: 30px
 }
 
@@ -205,7 +214,7 @@ pre a, pre a:visited, pre a:active {
   color: #f0f0f0;
   /*max-width: 440px;*/
   /*margin: 0 auto;*/
-  margin-top: 80px;
+  margin-top: 40px;
   padding: 18px;
   text-shadow: 2px 2px 15px #888;
   text-align: center;
@@ -228,9 +237,9 @@ cite {
   margin-bottom: 100px;
 }
 .project {
-  width: 660px;
+  width: 300px;
   margin: 30px auto;
-  height: 800px;
+  height: 400px;
   /*border: 2px solid deepskyblue;*/
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -245,7 +254,7 @@ cite {
 }
 
 .project-image h3 {
-  font-size: 2rem;
+  font-size: 1rem;
    text-align: center;
 }
 
@@ -254,7 +263,7 @@ cite {
    height: 55%;
    background-color: #fff;
    padding: 20px;
-   font-size: 2rem;
+   font-size: 1rem;
 }
 
 .contact {
@@ -471,8 +480,14 @@ article header {
   }
 
   .about-box {
+    width: unset;
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  }
+
+  #mobile-fix {
+    width: unset;
+    margin: 0;
   }
 
   .pic-json {
@@ -483,6 +498,10 @@ article header {
   .pic-json > img {
     top: -65px;
     margin-left: -65px;
+  }
+
+  .info-jsonified {
+    margin-bottom: 0;
   }
 
   pre {
@@ -508,6 +527,10 @@ article header {
     font-size: 1rem;
   }
 
+  .social > div {
+    color: #222;
+  }
+
   .quote {
     padding: 80px 0 8px 0;
   }
@@ -516,7 +539,6 @@ article header {
     width: 30%;
     margin: 30px 15px 0 15px;
     float: left;
-    height: 400px;
   }
 
   .project-image h3 {
@@ -527,7 +549,7 @@ article header {
   }
 } 
 
-@media screen and (max-width: 1220px) {
+@media screen and (min-width: 935px) and (max-width: 1220px) {
   .info {
     width: 500px;
   }
