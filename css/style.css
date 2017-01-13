@@ -510,7 +510,7 @@ article header {
 
   .info {
     clear: none;
-    overflow: none;
+    overflow: visible;
     max-width: 75%;
     height: 430px;
     float: left;
