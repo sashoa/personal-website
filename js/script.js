@@ -1,5 +1,12 @@
-function toggleMenu(event){
-  
+function scroll(element, to, duration) {
+  if (document.body.scrollTop === 0) return;
+  let difference = to - element.scrollTop;
+  var perTick = difference / duration * 2;
+
+  setTimeout(function(){
+    element.scrollTop = element.scrollTop + perTick;
+    scroll(element, to, duration - 2);
+  }, 10)
 }
 document.addEventListener('DOMContentLoaded', function(){
   let menu = document.querySelector('.main-nav');
@@ -36,5 +43,10 @@ document.addEventListener('DOMContentLoaded', function(){
       event.target.outerHTML = hamburgerImageElement;
     }
     
+  });
+
+  goTop.addEventListener('click', function(){
+    let currentPosition = document.body.scrollTop;
+    scroll(document.body, 0, 50);
   });
 });
