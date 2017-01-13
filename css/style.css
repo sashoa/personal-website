@@ -474,18 +474,18 @@ article header {
   }
 
   .about {
-    overflow: unset;
+    overflow: visible;
     height: 100vh;
   }
 
   .about-box {
-    width: unset;
+    width: auto;
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   }
 
   #mobile-fix {
-    width: unset;
+    width: auto;
     margin: 0;
   }
 
