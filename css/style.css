@@ -35,7 +35,6 @@ html {
   right: 0;
   z-index: 10;
   background-color: #333;
-  transition: all 0.3s linear;
 }
 
 .show-nav {
@@ -208,6 +207,16 @@ pre a, pre a:visited, pre a:active {
 .social > div {
   /*color: #f0f0f0;*/
   margin-top: 30px
+}
+
+.social a {
+  color: #222;
+}
+
+.social > div:last-child h3::before {
+  position: relative;
+  top: 8px;
+  content: url(../img/github.svg);
 }
 
 .quote {
