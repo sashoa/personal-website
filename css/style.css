@@ -398,6 +398,7 @@ article header {
 }
 
 
+
 @media screen and (min-width: 935px) {
   #hamburger-menu {
     display: none;
@@ -479,8 +480,8 @@ article header {
   }
 
   .about-box {
-    width: auto;
-    margin: 10px;
+    width: 795px;
+    margin: 10px auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   }
 
@@ -511,7 +512,7 @@ article header {
   .info {
     clear: none;
     overflow: visible;
-    max-width: 75%;
+    width: 500px;
     height: 430px;
     float: left;
     background-color: #fff;
@@ -553,12 +554,15 @@ article header {
   }
 } 
 
-@media screen and (min-width: 935px) and (max-width: 1220px) {
+@media screen and (min-width: 1220px) {
+  #mobile-fix {
+    min-width: 25%;
+  }
   .info {
-    width: 500px;
+    min-width: 75%;
   }
   .about-box {
-    width: 795px;
-    margin: 10px auto;
+    width: auto;
+    margin: 10px;
   }
 }
